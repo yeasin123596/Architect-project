@@ -47,6 +47,19 @@ main {
     margin: 0 auto;
 }
 
+.section-description {
+    color: rgba(114, 114, 114, 1);
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    max-width: 542px;
+}
+
+.section-title {
+    font-size: 4.5rem;
+    margin-bottom: 24px;
+    line-height: 5.4rem;
+}
+
 /* nav bar */
 
 .navbar {
@@ -146,12 +159,6 @@ main {
     max-width: 537px;
 }
 
-.section-title {
-    font-size: 4.5rem;
-    margin-bottom: 24px;
-    line-height: 5.4rem;
-}
-
 #quick-list {
     color: rgba(114, 114, 114, 1);
     font-weight: 500;
@@ -161,18 +168,15 @@ main {
     color: rgba(255, 144, 14, 1);
 }
 
-.section-description {
-    color: rgba(114, 114, 114, 1);
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    max-width: 542px;
-}
-
 .teams > .our-features > .btn-primary {
      margin-top: 32px;
 }
 
 /* facts section related styles */
+
+.facts-details {
+    padding: 0 20px;
+}
 
 .fact-container {
     display: grid;
@@ -200,6 +204,25 @@ main {
     font-size: 2rem;
     font-weight: 600;
     color: rgba(114, 114, 114, 1);
+}
+
+/* sponsor section related styles */
+
+.sponsor-details {
+    text-align: center;
+}
+
+.sponsor-details .section-description {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.sponsor .sponsor-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 155px;
+    margin-bottom: 130px;
+    filter: grayscale(100%);
 }
 
 
@@ -242,6 +265,15 @@ main {
         grid-template-columns: repeat(1, 1fr);
         gap: 100px;
     }
+
+    .sponsor .sponsor-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 80px;
+    }
+
+    .sponsor .sponsor-container img {
+        margin: 0 auto;
+    }
 }
 
 /* for medium device ( tab ) responsive media query */
@@ -259,4 +291,18 @@ main {
         grid-template-columns: repeat(2, 1fr);
         gap: 90px;
     }
+
+    .sponsor .sponsor-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 90px;
+    }
+
+    .sponsor .sponsor-container img {
+        margin: 0 auto;
+    }
+
+    #box-5 {
+        grid-column: span 2;
+    }
+
 }
